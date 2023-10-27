@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Arabic-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+html {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  background: url("../assets/path.svg");
+  background-size: 0;
+  background-position: 2em 2.2em;
+  transition: all 0.1s ease-in;
+}
+
+.nav-link:hover {
+  @apply text-green;
+  background: url("../assets/path.svg");
+  background-repeat: no-repeat;
+  background-position: 0 2.2em;
+  background-size: 100% 6px;
+  height: 45px;
+  display: flex;
+  transform: translateX(0.6);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-link:focus {
+  @apply text-green;
+  background: url("../assets/path.svg");
+  background-repeat: no-repeat;
+  background-position: 0 2.2em;
+  background-size: 100% 6px;
+  height: 45px;
+  display: flex;
+  transform: translateX(0.6);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-link:active {
+  @apply text-green;
+  background: url("../assets/path.svg");
+  background-repeat: no-repeat;
+  background-position: 0 2.2em;
+  background-size: 100% 6px;
+  height: 45px;
+  display: flex;
+  transform: translateX(0.6);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-link-active {
+  @apply text-green;
+  background: url("../assets/path.svg");
+  background-repeat: no-repeat;
+  background-position: 0 2.2em;
+  background-size: 100% 6px;
+  height: 45px;
+  display: flex;
+  transform: translateX(0.6);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  position: relative;
+  background: transparent;
+  z-index: 100;
+  width: 100vw;
+  padding: 0;
+  padding-top: 70px;
+  background: transparent;
+}
+
+.navbar-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100vw;
+  padding: 10px 24px;
+  box-shadow: 0px 8px 40px 0px #959da533;
+  margin: 0 auto 0;
+  background-color: white;
+  border-radius: 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 24px;
+    background: white;
+    max-height: 130px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 40px 0px #959da533;
+    transition: margin 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+
+  .navbar-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100vw;
+    padding: 40px 24px;
+    box-shadow: 0px 8px 40px 0px #959da533;
+    margin: 0 auto 0;
+    background-color: white;
+    border-radius: 20px;
+  }
+}
+
+
+#package-section ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  gap: 16px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+#package-section li {
+  display: flex;
+  gap: 0 16px;
+  font: 16px;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  vertical-align: middle;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #efefef;
+  cursor: pointer;
+  width: 401px;
+  border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 8px;
+  width: 401px;
+  height: 16px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  border-radius: 8px;
+  width: 401px;
+  height: 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 64px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #01a494;
+  transform: translate(-2px, -6px);
+  background-image: url("../assets/arrow-left.png"),
+    url("../assets/arrow-right.png");
+  background-position: 15% center, 85% center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid #088c7f;
+  padding: 2px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+  position: absolute;
+  top: -71px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #8c1818;
+  color: #000;
+  padding: 5px;
+  border-radius: 16px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -6px;
+  width: 64px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: url("https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png");
+  background: #01a494;
+}
+
+input:checked~.dot {
+  transform: translateX(150%);
+  background-color: #48bb78;
+}

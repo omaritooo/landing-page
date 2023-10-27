@@ -1,0 +1,56 @@
+{
+  "Home": "Home",
+  "error": {
+    "email": "Invalid Email Address",
+    "emailRequired": "Please enter your email",
+    "nameMaxLength": "Name must be 16 letters at most",
+    "nameMinLength": "Name must be at least 3 letters",
+    "nameRequired": "Please enter your name",
+    "nameType": "Name must be a string",
+    "subjectMaxLength": "You've exceeded the max limit (500 char)",
+    "subjectMinLength": "Body must at least be 3 characters",
+    "subjectRequired": "Please enter a body"
+  },
+  "features": {
+    "deals": "Exclusive Deals",
+    "rate": "Set your rate",
+    "schedule": "Attachment & Post Scheduling",
+    "stats": "Advanced Statistics",
+    "upload": "Upload Video with HD\nResolution"
+  },
+  "form": {
+    "email": "Email",
+    "name": "Full name",
+    "subject": "Subject"
+  },
+  "pricing": {
+    "annual": "annual",
+    "base": {
+      "month": "0"
+    },
+    "description": "We have several powerful plans to showcase your business and get discovered\nas a creative entrepreneurs. Everything you need.",
+    "enterprise": {
+      "month": "90",
+      "year": "940"
+    },
+    "head": "The Right Plan for Your Business",
+    "monthly": "month",
+    "pro": {
+      "month": "12",
+      "year": "100"
+    },
+    "title": {
+      "base": "Base",
+      "enterprise": "Enterprise",
+      "pro": "Pro"
+    }
+  },
+  "titles": {
+    "app": "Download",
+    "contact": "Contact Us",
+    "home": "Home",
+    "info": "Who we are",
+    "packages": "Packages",
+    "perks": "Perks"
+  }
+}
